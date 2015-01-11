@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RDF</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <script type="text/javascript" charset="utf-8">var ROOT_PATH = '<%= root_path %>';</script>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<div id="footer">
+	<div class="container">
+		<p class="muted text-center">
+			Copyright &copy; 2013 Developed by Razvan Mahu, Alex Stoia, Alexandru Mota, Victor Albu - <a id="help_link" href="javascript:;">Help</a><br>
+			Content by <a href="http://www.vitae.ac.uk/" target="_blank">Vitae&reg;</a>
+		</p>
+		<div class="row text-center">
+			<%= image_tag "RPDT_logo.jpg", :class => "rpdt_logo" %>
+			<%= image_tag "tuos_logo.png" %>
+			<%= link_to (image_tag "team1_logo.png", :class => "team1_logo"), (image_path "team1_logo_full.png"), :target => "blank" %>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

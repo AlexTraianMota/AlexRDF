@@ -1,0 +1,19 @@
+<div class="container">
+	<h1>Phases</h1>
+	
+	<table id="phases_table" class="table table-hover table-striped">
+		<thead>
+			<tr>
+				<th>Phase</th>
+			</tr>
+		</thead>
+
+		<tbody>
+		<% @phases.each do |phase| %>
+		  <tr>
+			<td><%= link_to @names.fetch(phase.name[0..2]) + " " + phase.phase, edit_phases_path(phase) %></td>
+		  </tr>
+		<% end %>
+		</tbody>
+	</table>
+</div>

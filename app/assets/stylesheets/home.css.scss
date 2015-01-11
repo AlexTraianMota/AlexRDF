@@ -1,0 +1,727 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div#logo {
+	position: relative;
+	top: -631px;
+	left: 97px;
+	width: 130px;
+}
+
+h1#header {
+	margin-top: -40px;
+}
+
+#main
+{
+	font-family:sans-Serif;
+	width: 1200px;
+	margin: 0 auto;
+	height: 805px;
+}
+#main a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 10px;
+}
+#main a:hover
+{
+	color: orange;
+	text-decoration: underline;
+}
+#pozaD11 {position: absolute;
+			left: 100px;
+			top : 25px;
+		visibility: hidden;}
+#pozaA11 {position: absolute;
+			left: 441px;
+			top : 25px;
+		visibility: hidden;}
+#pozaD22 {position: absolute;
+			left: 056px;
+			top : 215px;
+		visibility: hidden;}
+#pozaD2 {position: absolute;
+			left: 234px;
+			top : 217px;
+			visibility: hidden;}
+#pozaD1 {position: absolute;
+			left: 324px;
+			top : 183px;
+			visibility: hidden;}
+#pozaA1 {position: absolute;
+			left: 442px;
+			top : 184px;
+		visibility: hidden;}
+#pozaA2 {position: absolute;
+			left: 530px;
+			top : 218px;
+		visibility: hidden;}
+#pozaA22 {position: absolute;
+			left: 568px;
+			top : 216px;
+		visibility: hidden;}
+#pozaD33 {position: absolute;
+			left: 38px;
+			top : 310px;
+		visibility: hidden;}
+#pozaD3 {position: absolute;
+			left: 203px;
+			top : 309px;
+			visibility: hidden;}
+#pozaD {position: absolute;
+			left: 275px;
+			top : 257px;}
+#pozaA {position: absolute;
+			left: 444px;
+			top : 257px;}
+#pozaA3 {position: absolute;
+			left: 592px;
+			top : 308px;
+		visibility: hidden;}
+#pozaA33 {position: absolute;
+			left: 655px;
+			top : 307px;
+		visibility: hidden;}
+#pozaC11 {position: absolute;
+			left: 38px;
+			top : 428px;
+		visibility: hidden;}
+#pozaC1 {position: absolute;
+			left: 202px;
+			top : 431px;
+		visibility: hidden;}
+#pozaC {position: absolute;
+			left: 274px;
+			top : 431px;}
+#pozaB {position: absolute;
+			left: 443px;
+			top : 431px;}
+#pozaB1 {position: absolute;
+			left: 590px;
+			top : 431px;
+		visibility: hidden;}
+#pozaC22 {position: absolute;
+			left: 58px;
+			top : 551px;
+		visibility: hidden;}
+#pozaC33 {position: absolute;
+			left: 98px;
+			top : 636px;
+		visibility: hidden;}
+#pozaC2 {position: absolute;
+			left: 234px;
+			top : 515px;
+		visibility: hidden;}
+#pozaC3 {position: absolute;
+			left: 321px;
+			top : 576px;
+		visibility: hidden;}
+#pozaB3 {position: absolute;
+			left: 439px;
+			top : 577px;
+		visibility: hidden;}
+#pozaB2 {position: absolute;
+			left: 527px;
+			top : 516px;
+		visibility: hidden;}
+#pozaB22 {position: absolute;
+			left: 564px;
+			top : 547px;
+		visibility: hidden;}
+#pozaB33 {position: absolute;
+			left: 441px;
+			top : 639px;
+		visibility: hidden;}
+#pozaB11 {position: absolute;
+			left: 654px;
+			top : 428px;
+		visibility: hidden;}
+
+area:hover
+{
+cursor:pointer;
+}
+
+#textsD11
+{
+	visibility: hidden;
+}
+
+#D111 
+{
+	position: absolute;
+	left: 362px;
+	top : 60px;
+}
+#D112 
+{
+	position: absolute;
+	left: 345px;
+	top : 77px;
+}
+#D113 
+{
+	position: absolute;
+	left: 313px;
+	top : 94px;
+}
+#D114 
+{
+	position: absolute;
+	left: 358px;
+	top : 111px;
+}
+#D115 
+{
+	position: absolute;
+	left: 365px;
+	top : 128px;
+}
+#D116 
+{
+	position: absolute;
+	left: 247px;
+	top : 145px;
+}
+#D117
+{
+	position: absolute;
+	left: 247px;
+	top : 162px;
+}
+#D118
+{
+	position: absolute;
+	left: 165px;
+	top : 179px;
+}	
+#textsA11
+{
+	visibility: hidden;
+}
+
+#A111
+{
+	position: absolute;
+	left: 454px;
+	top: 77px;
+}
+
+#A112
+{
+	position: absolute;
+	left: 454px;
+	top: 94px;
+}
+
+#A113
+{
+	position: absolute;
+	left: 454px;
+	top: 111px;
+}
+
+#A114
+{
+	position: absolute;
+	left: 454px;
+	top: 128px;
+}
+
+#A115
+{
+	position: absolute;
+	left: 454px;
+	top: 146px;
+}
+
+#A116
+{
+	position: absolute;
+	left: 502px;
+	top: 163px;
+}
+
+#A117
+{
+	position: absolute;
+	left: 548px;
+	top: 183px;
+}
+
+#textsA22
+{
+	visibility: hidden;
+}
+
+#A221
+{
+	position: absolute;
+	left: 620px;
+	top: 216px;
+}
+
+#A222
+{
+	position: absolute;
+	left: 630px;
+	top: 233px;
+}
+
+#A223
+{
+	position: absolute;
+	left: 640px;
+	top: 250px;
+}
+
+#A224
+{
+	position: absolute;
+	left: 650px;
+	top: 267px;
+}
+
+#A225
+{
+	position: absolute;
+	left: 660px;
+	top: 284px;
+}
+
+#textsA33
+{
+	visibility: hidden;
+}
+
+#A331
+{
+	position: absolute;
+	left: 673px;
+	top: 315px;
+}
+
+#A332
+{
+	position: absolute;
+	left: 681px;
+	top: 332px;
+}
+
+#A333
+{
+	position: absolute;
+	left: 689px;
+	top: 349px;
+}
+
+#A334
+{
+	position: absolute;
+	left: 692px;
+	top: 366px;
+}
+
+#A335
+{
+	position: absolute;
+	left: 694px;
+	top: 383px;
+}
+
+#textsB11
+{
+	visibility: hidden;
+}
+
+#B111
+{
+	position: absolute;
+	left: 707px;
+	top: 431px;
+}
+
+#B112
+{
+	position: absolute;
+	left: 704px;
+	top: 448px;
+}
+
+#B113
+{
+	position: absolute;
+	left: 701px;
+	top: 465px;
+}
+
+#B114
+{
+	position: absolute;
+	left: 695px;
+	top: 482px;
+}
+
+#B115
+{
+	position: absolute;
+	left: 691px;
+	top: 499px;
+}
+
+#B116
+{
+	position: absolute;
+	left: 684px;
+	top: 516px;
+}
+
+#textsB22
+{
+	visibility: hidden;
+}
+
+#B221
+{
+	position: absolute;
+	left: 649px;
+	top: 551px;
+}
+
+#B222
+{
+	position: absolute;
+	left: 639px;
+	top: 568px;
+}
+
+#B223
+{
+	position: absolute;
+	left: 629px;
+	top: 585px;
+}
+
+#B224
+{
+	position: absolute;
+	left: 619px;
+	top: 602px;
+}
+
+#B225
+{
+	position: absolute;
+	left: 609px;
+	top: 619px;
+}
+
+#textsB33
+{
+	visibility: hidden;
+}
+
+#B331
+{
+	position: absolute;
+	left: 484px;
+	top: 675px;
+}
+
+#B332
+{
+	position: absolute;
+	left: 474px;
+	top: 692px;
+}
+
+#B333
+{
+	position: absolute;
+	left: 454px;
+	top: 709px;
+}
+
+#B334
+{
+	position: absolute;
+	left: 454px;
+	top: 726px;
+}
+
+#B335
+{
+	position: absolute;
+	left: 454px;
+	top: 743px;
+}
+
+#textsC11
+{
+	visibility: hidden;
+}
+
+#C111
+{
+	position: absolute;
+	left: 93px;
+	top: 429px;
+}
+
+#C112
+{
+	position: absolute;
+	left: 27px;
+	top: 451px;
+}
+
+#C113
+{
+	position: absolute;
+	left: 98px;
+	top: 468px;
+}
+
+#C114
+{
+	position: absolute;
+	left: 108px;
+	top: 483px;
+}
+
+#C115
+{
+	position: absolute;
+	left: 55px;
+	top: 499px;
+}
+
+#C116
+{
+	position: absolute;
+	left: 64px;
+	top: 514px;
+}
+
+#C117
+{
+	position: absolute;
+	left: 111px;
+	top: 527px;
+}
+
+#textsC22
+{
+	visibility: hidden;
+}
+
+#C221
+{
+	position: absolute;
+	left: 90px;
+	top: 573px;
+}
+
+#C222
+{
+	position: absolute;
+	left: 90px;
+	top: 590px;
+}
+
+#C223
+{
+	position: absolute;
+	left: 160px;
+	top: 607px;
+}
+
+#textsC33
+{
+	visibility: hidden;
+}
+
+#C331
+{
+	position: absolute;
+	left: 148px;
+	top: 675px;
+}
+
+#C332
+{
+	position: absolute;
+	left: 228px;
+	top: 692px;
+}
+
+#C333
+{
+	position: absolute;
+	left: 258px;
+	top: 709px;
+}
+
+#textsD22
+{
+	visibility: hidden;
+}
+
+#D221
+{
+	position: absolute;
+	left: 100px;
+	top: 236px;
+}
+
+#D222
+{
+	position: absolute;
+	left: 100px;
+	top: 253px;
+}
+
+#D223
+{
+	position: absolute;
+	left: 150px;
+	top: 270px;
+}
+
+#textsD33
+{
+	visibility: hidden;
+}
+
+#D331
+{
+	position: absolute;
+	left: 151px;
+	top: 315px;
+}
+
+#D332
+{
+	position: absolute;
+	left: 99px;
+	top: 332px;
+}
+
+#D333
+{
+	position: absolute;
+	left: 140px;
+	top: 349px;
+}
+
+#D334
+{
+	position: absolute;
+	left: 154px;
+	top: 366px;
+}
+
+#D335
+{
+	position: absolute;
+	left: 89px;
+	top: 383px;
+}
+
+#D336
+{
+	position: absolute;
+	left: 91px;
+	top: 400px;
+}
+
+.act
+{
+border:1px solid darkgreen;
+padding:0 1px;
+line-height:8px;
+font-size:8px !important;
+}
+.act:hover
+{
+background-color:darkgreen;
+}
+
+#circle
+{
+	position: relative;
+	top: -24px;
+	right: -360px;
+	width: 840px;
+}
+
+#phase
+{
+	float:left;
+	width:320px;
+	height:570px; 
+	border:2px solid #AF7817;
+	display:inline;
+	background-color: #FFF8C6;
+	position:relative;
+	top: 85px;
+
+}
+#phase h1
+{	
+	font-family : Impact;
+	font-style  : Bold;
+	margin-right: 10px;
+	margin-left : 10px;
+	padding-bottom : 25px;
+}
+#phase p
+{
+	font-family : Arial;
+	font-style  : Italic;	
+	margin-right: 10px;
+	margin-left : 10px;
+	text-align  : justify;
+}
+#loadingGif
+{
+	visibility:hidden;
+	position : relative;
+	float:left;
+	top:336px ;
+	left : -178px;
+}
+#left
+{
+	width: 40px;
+	height:40px;
+	position:absolute;
+	left:15px;
+	bottom:15px;
+}	
+#right
+{
+	width: 40px;
+	height:40px;
+	position:absolute;
+	right:15px;
+	bottom:15px;
+}
+
+#pC112
+{
+	width: 150px;
+	height: 10px;
+	text-align: right;
+	display: block;
+	line-height: 10px;
+}
+
+#C112 .act
+{
+	position: relative;
+	top: -12px;
+	left: 85px;
+}

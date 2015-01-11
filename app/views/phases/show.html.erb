@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<h1>
+	<%= @phase.phase %>
+
+</h1>
+<p>
+	<%= @phase.content.html_safe %>
+</p>
+<% phaseLeft = @phase.name 
+   phaseRight = @phase.name 
+	if (phaseLeft[4..5] == "1")
+		phaseLeft =""
+	else
+		pNr = (phaseLeft[4..5].to_f) -1
+		phaseLeft = phaseLeft[0..3] + pNr.to_s[0..0]
+	end 
+	
+	pNr = (phaseRight[4..5].to_f) +1
+	phaseRight = phaseRight[0..3] + pNr.to_s[0..0] 
+	nextPhs = Phases.exists?(:name => phaseRight)
+	if (!nextPhs)
+		phaseRight = ""
+	end %>
+	
+<% if phaseLeft != "" %>	
+<%= link_to "#{image_tag ('circle/left.png'), :id => 'left'}".html_safe, "javascript:sendRequest('"+phases_show_path(phaseLeft)+"');"%>
+<% end %>
+<% if phaseRight != "" %>
+<%= link_to "#{image_tag ('circle/right.png'), :id => 'right'}".html_safe, "javascript:sendRequest('"+phases_show_path(phaseRight)+"');" %>
+<% end %>

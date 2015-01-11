@@ -1,0 +1,23 @@
+// Place all the styles related to the admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div.admin-login {
+	width: 100%;
+}
+
+div.admin-login div.center {
+	float: none;
+	margin: 0 auto;
+}
+
+div.admin-login fieldset legend {
+	text-align: center;
+}
+
+#hits_filter_extra label {
+	margin-right: 20px;
+}
+
+#hits_filter_extra select {
+	width: 100px;
+}

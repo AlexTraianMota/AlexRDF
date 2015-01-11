@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RDF</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <script type="text/javascript" charset="utf-8">var ROOT_PATH = '<%= root_path %>';</script>
+  <%= javascript_include_tag "application" %>
+  <style>
+    h1#header {
+	  margin-top: 10px;
+	}
+  </style>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<%= link_to "Admin Area", {:controller => "admin", :action=> "index"}, :class => "brand" %>
+			<ul class="nav">
+				<li class="<%= 'active' if params[:controller] == 'admin' && params[:action] == 'index' %>"><%= link_to "Home", {:controller => "admin", :action=> "index"} %></li>
+				<% if admin? %>
+				<li class="<%= 'active' if params[:controller] == 'activities' %>"><%= link_to "Activities", activities_path %></li>
+				<li class="<%= 'active' if params[:controller] == 'phases' %>"><%= link_to "Phases", phases_path %></li>
+				<li class="<%= 'active' if params[:action] == 'hits' %>"><%= link_to "Hits", hits_path %></li>
+				<li><%= link_to "Logout", { :controller => "admin", :action => "destroy"} %></li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<div class="container">
+	<h1>Hits</h1>
+
+	<% if params[:year] && params[:month] %>
+	<table id="hits" class="table table-hover table-striped">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Number of hits</th>
+			</tr>
+		</thead>
+
+		<tbody>
+		<% @hits.each do |name, count| %>
+		  <tr>
+			<td><%= name %></td>
+			<td><%= count %></td>
+		  </tr>
+		<% end %>
+		</tbody>
+	</table>
+	
+	<div id="hits_filter_extra">
+		<label>
+			Show
+			<select>
+				<option value="all" selected="selected">all</option>
+				<option value="home">home</option>
+				<option value="phases">phases</option>
+				<option value="activities">activities</option>
+			</select>
+		</label>
+	</div>
+	<% else %>
+		<form id="hits_select_form" class="form-inline">
+			<fieldset>
+				<legend>Please select a date</legend>
+				<%= select_tag(:year, options_for_select(
+					Time.now.year.downto(2013),
+					1),
+				:class => "input-small") %>
+				<%= select_tag(:month, options_for_select(
+					Hit.month.map {|number, name| [name, number]},
+					Time.now.month),
+				:class => "input-medium") %>
+				<%= link_to "Submit", {:action => "hits"}, :class => "btn", :id => "hits_select_form_submit" %>
+			</fieldset>
+		</form>
+	<% end %>
+	
+</div>

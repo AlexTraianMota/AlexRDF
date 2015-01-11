@@ -1,0 +1,29 @@
+<div class="container admin-login">
+	<div class="row">
+		<div class="span6 well center">
+			<%= form_tag admin_path, :class => "form-horizontal" do %>
+				<fieldset>
+					<legend>Admin login</legend>
+					<% if flash[:error] %>
+						<div class="alert alert-error">
+							<button type="button" class="close" data-dismiss="alert">&times;</button>
+							<strong>Error!</strong>
+							<%= flash[:error] %>
+						</div>
+					<% end %>
+					<div class="control-group">
+						<%= label_tag :password, "Password:", :class => "control-label" %>
+						<div class="controls">
+							<%= password_field_tag :password, "", :placeholder => "Enter password...", :autofocus => true, :class => "input-medium" %>
+						</div>
+					</div>
+					<div class="control-group"> 
+						<div class="controls">
+							<%= submit_tag "Login", :class => "btn btn-primary" %>
+						</div>
+					</div>
+				</fieldset>
+			<% end %>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+	<h1>Activities</h1>
+
+	<table id="activities_table" class="table table-hover table-striped">
+		<thead>
+			<tr>
+				<th>Activity</th>
+			</tr>
+		</thead>
+
+		<tbody>
+		<% @activities.each do |activity| %>
+		  <tr>
+			<td><%= link_to activity.name, edit_activity_path(activity) %></td>
+		  </tr>
+		<% end %>
+		</tbody>
+	</table>
+</div>

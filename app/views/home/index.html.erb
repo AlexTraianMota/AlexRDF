@@ -1,0 +1,433 @@
+	<h1 id="header" class="text-center">
+		Research Development Framework
+	</h1>
+	<section id="main">
+		<div id="circle">
+			<%= image_tag 'circle/a11.png', :id => 'pozaA11'%>
+			<%= image_tag 'circle/a21.png', :id => 'pozaA22'%>
+			<%= image_tag 'circle/a31.png', :id => 'pozaA33'%>
+			
+			<%= image_tag 'circle/b11.png', :id => 'pozaB11'%>
+			<%= image_tag 'circle/b21.png', :id => 'pozaB22'%>
+			<%= image_tag 'circle/b31.png', :id => 'pozaB33'%>
+			
+			<%= image_tag 'circle/c11.png', :id => 'pozaC11'%>
+			<%= image_tag 'circle/c21.png', :id => 'pozaC22'%>
+			<%= image_tag 'circle/c31.png', :id => 'pozaC33'%>
+			
+			<%= image_tag 'circle/d11.png', :id => 'pozaD11'%>
+			<%= image_tag 'circle/d21.png', :id => 'pozaD22'%>
+			<%= image_tag 'circle/d31.png', :id => 'pozaD33'%>
+
+			<%= image_tag 'circle/a.png', :id => 'pozaA', :usemap=>'#pozaAmap' %>
+			<%= image_tag 'circle/b.png', :id => 'pozaB', :usemap=>'#pozaBmap' %>
+			<%= image_tag 'circle/c.png', :id => 'pozaC', :usemap=>'#pozaCmap' %>
+			<%= image_tag 'circle/d.png', :id => 'pozaD', :usemap=>'#pozaDmap' %>
+			
+			<%= image_tag 'circle/a1.png', :id => 'pozaA1', :usemap=>'#pozaA1map' %>
+			<%= image_tag 'circle/a2.png', :id => 'pozaA2', :usemap=>'#pozaA2map' %>
+			<%= image_tag 'circle/a3.png', :id => 'pozaA3', :usemap=>'#pozaA3map' %>
+			
+			<%= image_tag 'circle/b1.png', :id => 'pozaB1', :usemap=>'#pozaB1map' %>
+			<%= image_tag 'circle/b2.png', :id => 'pozaB2', :usemap=>'#pozaB2map' %>
+			<%= image_tag 'circle/b3.png', :id => 'pozaB3', :usemap=>'#pozaB3map' %>
+
+		  	<%= image_tag 'circle/c1.png', :id => 'pozaC1', :usemap=>'#pozaC1map' %>
+			<%= image_tag 'circle/c2.png', :id => 'pozaC2', :usemap=>'#pozaC2map' %>
+			<%= image_tag 'circle/c3.png', :id => 'pozaC3', :usemap=>'#pozaC3map' %>
+			
+			<%= image_tag 'circle/d1.png', :id => 'pozaD1', :usemap=>'#pozaD1map' %>
+			<%= image_tag 'circle/d2.png', :id => 'pozaD2', :usemap=>'#pozaD2map' %>
+			<%= image_tag 'circle/d3.png', :id => 'pozaD3', :usemap=>'#pozaD3map' %>
+
+			<!--texts-->
+			<div id="textsA11">
+				<div id="A111">
+					<%= link_to "Subject knowledge", "javascript:sendRequest('"+phases_show_path('a11p1')+"')", :id =>"pA111" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a11"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A112">
+					<%= link_to "Research methods:theoretical knowledge", "javascript:sendRequest('"+phases_show_path('a12p1')+"')", :id =>"pA112" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a12"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A113">
+					<%= link_to "Research methods:practical application", "javascript:sendRequest('"+phases_show_path('a13p1')+"')", :id =>"pA113" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a13"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A114">
+					<%= link_to "Information seeking", "javascript:sendRequest('"+phases_show_path('a14p1')+"')", :id =>"pA114" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a14"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A115">
+					<%= link_to "Information literacy and management", "javascript:sendRequest('"+phases_show_path('a15p1')+"')", :id =>"pA115" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a15"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A116">
+					<%= link_to "Languages", "javascript:sendRequest('"+phases_show_path('a16p1')+"')", :id =>"pA116" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a16"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A117">
+					<%= link_to "Academic literacy and numeracy", "javascript:sendRequest('"+phases_show_path('a17p1')+"')", :id =>"pA117" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a17"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+			
+			<div id="textsA22">
+				<div id="A221">
+					<%= link_to "Analysing", "javascript:sendRequest('"+phases_show_path('a21p1')+"')", :id =>"pA221" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a21"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A222">
+					<%= link_to "Synthesising", "javascript:sendRequest('"+phases_show_path('a22p1')+"')", :id =>"pA222" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a22"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A223">
+					<%= link_to "Critical thinking", "javascript:sendRequest('"+phases_show_path('a23p1')+"')", :id =>"pA223" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a23"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A224">
+					<%= link_to "Evaluating", "javascript:sendRequest('"+phases_show_path('a24p1')+"')", :id =>"pA224" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a24"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A225">
+					<%= link_to "Problem solving", "javascript:sendRequest('"+phases_show_path('a25p1')+"')", :id =>"pA225" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a25"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+			
+			<div id="textsA33">
+				<div id="A331">
+					<%= link_to "Inquiring mind", "javascript:sendRequest('"+phases_show_path('a31p1')+"')", :id =>"pA331" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a31"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A332">
+					<%= link_to "Intellectual insight", "javascript:sendRequest('"+phases_show_path('a32p1')+"')", :id =>"pA332" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a32"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A333">
+					<%= link_to "Innovation", "javascript:sendRequest('"+phases_show_path('a33p1')+"')", :id =>"pA333" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a33"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A334">
+					<%= link_to "Argument contruction", "javascript:sendRequest('"+phases_show_path('a34p1')+"')", :id =>"pA334" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a34"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="A335">
+					<%= link_to "Intellectual risk", "javascript:sendRequest('"+phases_show_path('a35p1')+"')", :id =>"pA335" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "a35"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+			
+			<div id="textsB11">
+				<div id="B111">
+					<%= link_to "Enthusiasm", "javascript:sendRequest('"+phases_show_path('b11p1')+"')", :id =>"pB111" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b11"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B112">
+					<%= link_to "Perseverance", "javascript:sendRequest('"+phases_show_path('b12p1')+"')", :id =>"pB112" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b12"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B113">
+					<%= link_to "Integrity", "javascript:sendRequest('"+phases_show_path('b13p1')+"')", :id =>"pB113" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b13"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B114">
+					<%= link_to "Self-confidence", "javascript:sendRequest('"+phases_show_path('b14p1')+"')", :id =>"pB114" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b14"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B115">
+					<%= link_to "Self-reflection", "javascript:sendRequest('"+phases_show_path('b15p1')+"')", :id =>"pB115" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b15"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B116">
+					<%= link_to "Responsability", "javascript:sendRequest('"+phases_show_path('b16p1')+"')", :id =>"pB116" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b16"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+			
+			<div id="textsB22">
+				<div id="B221">
+					<%= link_to "Preparation and prioritisation", "javascript:sendRequest('"+phases_show_path('b21p1')+"')", :id =>"pB221" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b21"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B222">
+					<%= link_to "Commitment to research", "javascript:sendRequest('"+phases_show_path('b22p1')+"')", :id =>"pB222" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b22"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B223">
+					<%= link_to "Time management", "javascript:sendRequest('"+phases_show_path('b23p1')+"')", :id =>"pB223" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b23"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B224">
+					<%= link_to "Responsivness to change", "javascript:sendRequest('"+phases_show_path('b24p1')+"')", :id =>"pB224" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b24"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B225">
+					<%= link_to "Work-life balance", "javascript:sendRequest('"+phases_show_path('b25p1')+"')", :id =>"pB225" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b25"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+			
+			<div id="textsB33">
+				<div id="B331">
+					<%= link_to "Career management", "javascript:sendRequest('"+phases_show_path('b31p1')+"')", :id =>"pB331" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b31"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B332">
+					<%= link_to "Continuing professional development", "javascript:sendRequest('"+phases_show_path('b32p1')+"')", :id =>"pB332" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b32"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B333">
+					<%= link_to "Responsivness to opportunities", "javascript:sendRequest('"+phases_show_path('b33p1')+"')", :id =>"pB333" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b33"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B334">
+					<%= link_to "Networking", "javascript:sendRequest('"+phases_show_path('b34p1')+"')", :id =>"pB334" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b34"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="B335">
+					<%= link_to "Reputation and esteem", "javascript:sendRequest('"+phases_show_path('b35p1')+"')", :id =>"pB335" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "b35"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+			
+			<div id="textsC11">
+				<div id="C111">
+					<%= link_to "Health and safety", "javascript:sendRequest('"+phases_show_path('c11p1')+"')", :id =>"pC111" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c11"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="C112">				
+					<%= link_to "Ethics, principles and sustainability", "javascript:sendRequest('"+phases_show_path('c12p1')+"')", :id =>"pC112" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c12"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="C113">
+					<%= link_to "Legal requirments", "javascript:sendRequest('"+phases_show_path('c13p1')+"')", :id =>"pC113" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c13"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="C114">
+					<%= link_to "IPR and copyright", "javascript:sendRequest('"+phases_show_path('c14p1')+"')", :id =>"pC114" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c14"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="C115">
+					<%= link_to "Respect and confidentiality", "javascript:sendRequest('"+phases_show_path('c15p1')+"')", :id =>"pC115" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c15"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="C116">
+					<%= link_to "Attribution and co-authorship", "javascript:sendRequest('"+phases_show_path('c16p1')+"')", :id =>"pC116" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c16"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="C117">
+					<%= link_to "Appropriate practice", "javascript:sendRequest('"+phases_show_path('c17p1')+"')", :id =>"pC117" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c17"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+			
+			<div id="textsC22">
+				<div id="C221">
+					<%= link_to "Research strategy", "javascript:sendRequest('"+phases_show_path('c21p1')+"')", :id => "pC221" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c21"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="C222">
+					<%= link_to "Project planning and delivery", "javascript:sendRequest('"+phases_show_path('c22p1')+"')", :id => "pC222" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c22"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="C223">	
+					<%= link_to "Risk management", "javascript:sendRequest('"+phases_show_path('c23p1')+"')", :id => "pC223" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c23"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+			
+			<div id="textsC33">
+				<div id="C331">
+					<%= link_to "Income and funding generation", "javascript:sendRequest('"+phases_show_path('c31p1')+"')", :id => "pC331" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c31"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="C332">
+					<%= link_to "Financial management", "javascript:sendRequest('"+phases_show_path('c32p1')+"')", :id => "pC332" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c32"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="C333">
+					<%= link_to "Infrastructure and resources", "javascript:sendRequest('"+phases_show_path('c33p1')+"')", :id => "pC333" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "c33"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+			
+			<div id="textsD11">
+				<div id="D111">
+					<%= link_to "Colegiality", "javascript:sendRequest('"+phases_show_path('d11p1')+"')", :id => "pD111" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d11"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D112">
+					<%= link_to "Team Working", "javascript:sendRequest('"+phases_show_path('d12p1')+"')", :id => "pD112" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d12"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D113">
+					<%= link_to "People management", "javascript:sendRequest('"+phases_show_path('d13p1')+"')", :id => "pD113" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d13"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D114">
+					<%= link_to "Supervision", "javascript:sendRequest('"+phases_show_path('d14p1')+"')", :id => "pD114" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d14"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D115">
+					<%= link_to "Mentoring", "javascript:sendRequest('"+phases_show_path('d15p1')+"')", :id => "pD115" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d15"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D116">
+					<%= link_to "Influence and Leadership", "javascript:sendRequest('"+phases_show_path('d16p1')+"')", :id => "pD116" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d16"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D117">
+					<%= link_to "Collaboration", "javascript:sendRequest('"+phases_show_path('d17p1')+"')", :id => "pD117" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d17"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D118">
+					<%= link_to "Equality and diversity", "javascript:sendRequest('"+phases_show_path('d18p1')+"')", :id => "pD118" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d18"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+			
+			<div id="textsD22">
+				<div id="D221">
+					<%= link_to "Communication methods", "javascript:sendRequest('"+phases_show_path('d21p1')+"')", :id => "pD221" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d21"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D222">
+					<%= link_to "Communication media", "javascript:sendRequest('"+phases_show_path('d22p1')+"')", :id => "pD222" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "22"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D223">
+					<%= link_to "Publication", "javascript:sendRequest('"+phases_show_path('d23p1')+"')", :id => "pD223" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d23"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+
+			<div id="textsD33">
+				<div id="D331">
+					<%= link_to "Teaching", "javascript:sendRequest('"+phases_show_path('d31p1')+"')", :id => "pD331" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d31"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D332">
+					<%= link_to "Public engagement", "javascript:sendRequest('"+phases_show_path('d32p1')+"')", :id => "pD332" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d32"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D333">
+					<%= link_to "Enterprise", "javascript:sendRequest('"+phases_show_path('d33p1')+"')", :id => "pD333" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d33"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D334">
+					<%= link_to "Policy", "javascript:sendRequest('"+phases_show_path('d34p1')+"')", :id => "pD334" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d34"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D335">
+					<%= link_to "Society and culture", "javascript:sendRequest('"+phases_show_path('d35p1')+"')", :id => "pD335" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d35"}, :class => "act", :target => "_blank" %>
+				</div>
+				<div id="D336">
+					<%= link_to "Global citizenship", "javascript:sendRequest('"+phases_show_path('d36p1')+"')", :id => "pD336" %>
+					<%= link_to "A", {:controller => "activities", :action => "show", :id => "d36"}, :class => "act", :target => "_blank" %>
+				</div>
+			</div>
+		<!--end-of-texts-->	
+			
+		<map name="pozaAmap">
+		  <area id="pozaAarea" shape="poly" coords="0,0, 0,167, 166,167 , 166,95, 116,50, 72,15" alt="pozaA"  href="javascript:;" onclick="animation (['pozaA1', 'pozaA2', 'pozaA3']); checkhidden (['pozaA11', 'pozaA22', 'pozaA33', 'textsA11', 'textsA22', 'textsA33'])">
+		</map>
+		<map name="pozaBmap">
+		  <area id="pozaBarea" shape="poly" coords="0,0, 0,168, 68,150, 120,116, 160,56, 165,0" alt="pozaB" href="javascript:;" onclick="animation (['pozaB1', 'pozaB2', 'pozaB3']); checkhidden (['pozaB11', 'pozaB22', 'pozaB33', 'textsB11', 'textsB22', 'textsB33'])">
+		</map>
+		<map name="pozaCmap">
+		  <area id="pozaCarea" shape="poly" coords="0,0, 167,0, 167,165, 105,155, 52,124, 10,68" alt="pozaC" href="javascript:;" onclick="animation (['pozaC1', 'pozaC2', 'pozaC3']); checkhidden (['pozaC11', 'pozaC22', 'pozaC33', 'textsC11',  'textsC22',  'textsC33'])">
+		</map>
+		<map name="pozaDmap">
+		  <area id="pozaDarea" shape="poly" coords="165,168, 165,0, 95,15, 50,50, 15,95 , 0,168" alt="pozaD" href="javascript:;" onclick="animation (['pozaD1', 'pozaD2', 'pozaD3']); checkhidden (['pozaD11', 'pozaD22', 'pozaD33', 'textsD11',  'textsD22',  'textsD33'])">
+		</map>
+		<map name="pozaD3map">
+			<area id="pozaD3area" shape="poly" coords="0,119, 68,120, 72,77, 88,36, 30,0 , 20,20, 9,51, 2,65" alt="pozaD3"  href="javascript:;" onclick="animation (['pozaD33', 'textsD33'])">
+			<area id="pozaD3area1" shape="poly" coords="71,119, 91,119, 91,44, 71,84" alt="pozaD"  href="javascript:;" onclick="animation (['pozaD1', 'pozaD2', 'pozaD3']); checkhidden (['pozaD11', 'pozaD22', 'pozaD33', 'textsD11',  'textsD22',  'textsD33'])">
+			<area id="pozaD3area2" shape="poly" coords="91,31, 91,0, 38,0" alt="pozaD2" href="javascript:;" onclick="animation (['pozaD22', 'textsD22'])">
+		</map>
+		<map name="pozaD2map">
+			<area id="pozaD2area" shape="poly" coords="0,88, 61,123, 86,90 ,122,62, 85,0, 40,37" alt="pozaD2"  href="javascript:;" onclick="animation (['pozaD22', 'textsD22'])"> 
+			<area id="pozaD2area1" shape="poly" coords="122,124, 122,67, 81,93, 66,124" alt="pozaD"  href="javascript:;" onclick="animation (['pozaD1', 'pozaD2', 'pozaD3']); checkhidden (['pozaD11', 'pozaD22', 'pozaD33', 'textsD11',  'textsD22',  'textsD33'])">
+			<area id="pozaD2area2" shape="poly" coords="90,0, 122,53, 122,0" alt="pozaD1" href="javascript:;" onclick="animation (['pozaD11', 'textsD11'])">
+		</map>
+		<map name="pozaD1map">
+			<area id="pozaD1area" shape="poly" coords="0,33, 35,94, 73,76, 119,70, 119,0, 57,7" alt="pozaD1" href="javascript:;" onclick="animation (['pozaD11', 'textsD11'])"> 
+			<area id="pozaD1area1" shape="poly" coords="119,72, 119,94, 44,94, 80,79" alt="pozaD" href="javascript:;" onclick="animation (['pozaD1', 'pozaD2', 'pozaD3']); checkhidden (['pozaD11', 'pozaD22', 'pozaD33', 'textsD11',  'textsD22',  'textsD33'])">
+		</map>
+		<map name="pozaA3map">
+			<area id="pozaA3area" shape="poly" coords="2,35, 17,74, 22,119, 91,119, 81,53, 59,0" alt="pozaA3" href="javascript:;" onclick="animation (['pozaA33', 'textsA33'])"/> 
+			<area id="pozaA3area1" shape="poly" coords="0,119, 19,119, 13,78, 0,42" alt="pozaA"  href="javascript:;" onclick="animation (['pozaA1', 'pozaA2', 'pozaA3']); checkhidden (['pozaA11', 'pozaA22', 'pozaA33', 'textsA11', 'textsA22', 'textsA33'])">
+			<area id="pozaA3area2" shape="poly" coords="0,30, 0,0, 52,0" alt="pozaA2"  href="javascript:;" onclick="animation (['pozaA22', 'textsA22'])">
+		</map>
+		<map name="pozaA2map">
+			<area id="pozaA2area" shape="poly" coords="0,59, 39,88, 62,122, 122,87, 82,38, 34,0" alt="pozaA2" href="javascript:;" onclick="animation (['pozaA22', 'textsA22'])"/> 
+			<area id="pozaA2area1" shape="poly" coords="0,64, 0,122, 57,122, 31,87" alt="pozaA"  href="javascript:;" onclick="animation (['pozaA1', 'pozaA2', 'pozaA3']); checkhidden (['pozaA11', 'pozaA22', 'pozaA33', 'textsA11', 'textsA22', 'textsA33'])">
+			<area id="pozaA2area2" shape="poly" coords="0,0, 0,54, 32,0" alt="pozaA1"  href="javascript:;" onclick="animation (['pozaA11', 'textsA11'])">
+		</map>
+		<map name="pozaA1map">
+			<area id="pozaA1area" shape="poly" coords="3,0, 0,70, 49,75, 87,93, 120,33, 71,9" alt="pozaA1" href="javascript:;" onclick="animation (['pozaA11', 'textsA11'])"/> 
+			<area id="pozaA1area1" shape="poly" coords="2,73, 2,93, 76,93, 49,80" alt="pozaA"  href="javascript:;" onclick="animation (['pozaA1', 'pozaA2', 'pozaA3']); checkhidden (['pozaA11', 'pozaA22', 'pozaA33', 'textsA11', 'textsA22', 'textsA33'])">
+		</map>
+		<map name="pozaC3map">
+			<area id="pozaC3area" shape="poly" coords="3,61, 58,84, 119,94, 119,22, 75,18, 39,0" alt="pozaC3" href="javascript:;" onclick="animation (['pozaC33', 'textsC33'])"/> 
+			<area id="pozaC3area1" shape="poly" coords="119,0, 119,18, 85,15, 45,0" alt="pozaC"  href="javascript:;" onclick="animation (['pozaC1', 'pozaC2', 'pozaC3']); checkhidden (['pozaC11', 'pozaC22', 'pozaC33', 'textsC11', 'textsC22',  'textsC33'])">
+			<area id="pozaC3area2" shape="poly" coords="33,0, 0,60, 0,0" alt="pozaC2"  href="javascript:;" onclick="animation (['pozaC22', 'textsC22'])">
+		</map>
+		<map name="pozaC2map">
+			<area id="pozaC2area" shape="poly" coords="0,35, 37,81, 87,123, 121,59, 86,34, 60,0" alt="pozaC2" href="javascript:;" onclick="animation (['pozaC22', 'textsC22'])"/> 
+			<area id="pozaC2area1" shape="poly" coords="122,0, 122,55, 92,33, 66,0" alt="pozaC"  href="javascript:;" onclick="animation (['pozaC1', 'pozaC2', 'pozaC3']); checkhidden (['pozaC11', 'pozaC22', 'pozaC33', 'textsC11', 'textsC22',  'textsC33'])">
+			<area id="pozaC2area2" shape="poly" coords="0,0, 54,0, 0,31" alt="pozaC1"  href="javascript:;" onclick="animation (['pozaC11', 'textsC11'])">
+		</map>
+		<map name="pozaC1map">
+			<area id="pozaC1area" shape="poly" coords="0,0, 9,62, 32,117, 93,81, 73,41, 69,0" alt="pozaC1" href="javascript:;" onclick="animation (['pozaC11', 'textsC11'])"/> 
+			<area id="pozaC1area1" shape="poly" coords="93,73, 93,0, 72,0, 79,40," alt="pozaC"  href="javascript:;" onclick="animation (['pozaC1', 'pozaC2', 'pozaC3']); checkhidden (['pozaC11', 'pozaC22', 'pozaC33', 'textsC11', 'textsC22',  'textsC33'])">
+		</map>
+		<map name="pozaB1map">
+			<area id="pozaB1area" shape="poly" coords="0,0 , 18,0 , 13,31 , 0,70" alt="pozaB" href="javascript:;" onclick="animation (['pozaB1', 'pozaB2', 'pozaB3']); checkhidden (['pozaB11', 'pozaB22', 'pozaB33', 'textsB11', 'textsB22', 'textsB33'])">
+			<area id="pozaB1area1" shape="poly" coords="23,0 , 93,0 , 84,38 , 75,73 , 69,93 , 59,114 , 0,80 , 17,37" alt="pozaB1" href="javascript:;" onclick="animation (['pozaB11', 'textsB11'])">
+		</map>
+		
+		<map name="pozaB2map">
+			<area id="pozaB2area" shape="poly" coords="0,0 , 0,55 , 30,32 , 55,0" alt="pozaB" href="javascript:;" onclick="animation (['pozaB1', 'pozaB2', 'pozaB3']); checkhidden (['pozaB11', 'pozaB22', 'pozaB33', 'textsB11', 'textsB22', 'textsB33'])">
+			<area id="pozaB2area1" shape="poly" coords="123,0 , 70,0 , 123,32" alt="pozaB1" href="javascript:;" onclick="animation (['pozaB11', 'textsB11'])">
+			<area id="pozaB2area2" shape="poly" coords="62,0 , 123,35 , 87,78 , 67,98 , 35,121 , 0,63 , 28,40 , 49,20" alt="pozaB2" href="javascript:;" onclick="animation (['pozaB22', 'textsB22'])">
+		</map>
+		
+		<map name="pozaB3map">
+			<area id="pozaB3area" shape="poly" coords="6,0 , 75,0 , 37,14 , 6,16" alt="pozaB" href="javascript:;" onclick="animation (['pozaB1', 'pozaB2', 'pozaB3']); checkhidden (['pozaB11', 'pozaB22', 'pozaB33', 'textsB11', 'textsB22', 'textsB33'])">
+			<area id="pozaB3area1" shape="poly" coords="83,0 , 122,60 , 81,76 , 21,84 , 4,93 , 4,22 , 37,18 , 66,10" alt="pozaB3" href="javascript:;" onclick="animation (['pozaB33', 'textsB33'])">
+			<area id="pozaB3area2" shape="poly" coords="122,0 , 122,50 , 88,0" alt="pozaB2" href="javascript:;" onclick="animation (['pozaB22', 'textsB22'])">
+		</map>
+		
+	 </div>
+	 <div id="phase">
+		<h1>Help</h1>
+		<p>The Research Developer Framework (RDF) can be seen on the right side of the screen.</p>
+		<p>
+			In order to expand or close the fields of the RDF circle you simply have to click on one of the fields you are interested in and the circle will expand accordingly.<br>
+			Note: More than one field of the RDF may be opened at once!
+		</p>
+		<p>If you are interested in finding out more about a specific skill, competence or attribute you simply have to click it. On the left side of the screen, a text will appear
+		in place of this help describing the phases of that specific attribute. You may go from one phase to another by clicking on the navigation arrows.</p>
+		<p>You might notice a small [A] next to every skill. These [A]s are links to activitiy pages for the specific skill. If you would like to get help in order to further 
+		develop one of your skills you will find useful information on that link.</p>
+	</div>
+	<div id="help" class="hide">
+		<h1>Help</h1>
+		<p>The Research Developer Framework (RDF) can be seen on the right side of the screen.</p>
+		<p>
+			In order to expand or close the fields of the RDF circle you simply have to click on one of the fields you are interested in and the circle will expand accordingly.<br>
+			Note: More than one field of the RDF may be opened at once!
+		</p>
+		<p>If you are interested in finding out more about a specific skill, competence or attribute you simply have to click it. On the left side of the screen, a text will appear
+		in place of this help describing the phases of that specific attribute. You may go from one phase to another by clicking on the navigation arrows.</p>
+		<p>You might notice a small [A] next to every skill. These [A]s are links to activitiy pages for the specific skill. If you would like to get help in order to further 
+		develop one of your skills you will find useful information on that link.</p>
+	</div>
+	<%= image_tag 'ajax-loader.gif', :id =>"loadingGif", :alt => 'loading' %>
+	<div id="logo">
+		<%= image_tag 'RPDT_logo.jpg' %>
+	</div>
+	</section>

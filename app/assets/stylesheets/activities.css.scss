@@ -1,0 +1,16 @@
+// Place all the styles related to the Activities controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#cke_activity_body {
+	position: absolute;
+	top: 140px;
+	left: 0;
+}
+
+#edit_activity_submit {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -55px;
+	width: 130px;
+}

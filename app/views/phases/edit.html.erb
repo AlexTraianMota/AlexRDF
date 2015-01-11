@@ -1,0 +1,32 @@
+<div class="container text-center">
+	<h1>Editing phase <br> <%= @name.name + " " + @phase.phase %></h1>
+	
+	<p id="notice"><%= notice %></p>
+
+	<%= form_for @phase, :url => {:action => "update"} do |f| %>
+	  <% if @phase.errors.any? %>
+		<div id="error_explanation">
+		  <h2><%= pluralize(@phase.errors.count, "error") %> prohibited this phase from being saved:</h2>
+
+		  <ul>
+		  <% @phase.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+		  <% end %>
+		  </ul>
+		</div>
+	  <% end %>
+
+	  <div class="field">
+		<%= f.label :phase %><br />
+		<%= f.text_field :phase %>
+	  </div>
+	  <div class="field">
+		<%= f.label :content %><br />
+		<%= f.text_area :content, :class => "input-xxlarge" %>
+	  </div>
+	  <div class="actions">
+		<%= f.submit :class => "btn" %>
+	  </div>
+	<% end %>
+
+</div>

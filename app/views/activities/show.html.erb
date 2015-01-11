@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+	<%= @activity.body.html_safe %>
+</p>
+
+<% if admin? %>
+<%= link_to 'Edit', edit_activity_path(@activity) %>
+<% end %>
